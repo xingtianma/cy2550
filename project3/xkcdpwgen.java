@@ -68,7 +68,7 @@ public class xkcdpwgen {
       String wordList[] = new String[w];
       int randInt = new Random().nextInt(58110);
       for (int z = 0; z < w; z++) {
-        wordList[x] = Files.readAllLines(Paths.get("text.txt")).get(randInt);
+        wordList[x] = Files.readAllLines(Paths.get("word.txt")).get(randInt);
       }
 
       if (c > 0) {
@@ -174,7 +174,7 @@ public class xkcdpwgen {
     String newWord[] = new String[w];
     
     for(int z = 0; z < w; z++) {
-      newWord[z] = Files.readAllLines(Paths.get("text.txt")).get(new Random().nextInt(58110));
+      newWord[z] = Files.readAllLines(Paths.get("words.txt")).get(new Random().nextInt(58110));
     }
     
     for(int u = 0; u < w; u++) {
