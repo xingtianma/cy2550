@@ -32,21 +32,17 @@ public class xkcdpwgen {
             + "-n and --n sets the number of words in the password\n"
             + "-s and --symbols inserts a # of random symbols into the password";
       }
-      else if (input[i].equalsIgnoreCase("-w") || input[i].equalsIgnoreCase("--words")) {
-        wordCount = Integer.parseInt(input[i++]);
-        i++;
+      else if (input[i].equals("-w") || input[i].equals("--words")) {
+        wordCount = Integer.parseInt(input[++i]);
       }
-      else if (input[i].equalsIgnoreCase("-c") || input[i].equalsIgnoreCase("--caps")) {
-        capCount = Integer.parseInt(input[i++]);
-        i++;
+      else if (input[i].equals("-c") || input[i].equals("--caps")) {
+        capCount = Integer.parseInt(input[++i]);
       }
-      else if (input[i].equalsIgnoreCase("-n") || input[i].equalsIgnoreCase("--numbers")) {
-        numberCount = Integer.parseInt(input[i++]);
-        i++;
+      else if (input[i].equals("-n") || input[i].equals("--numbers")) {
+        numberCount = Integer.parseInt(input[++i]);
       }
-      else if (input[i].equalsIgnoreCase("-s") || input[i].equalsIgnoreCase("--symbols")) {
-        symbolCount = Integer.parseInt(input[i++]);
-        i++;
+      else if (input[i].equals("-s") || input[i].equals("--symbols")) {
+        symbolCount = Integer.parseInt(input[++i]);
       }
     }
 
@@ -239,6 +235,6 @@ public class xkcdpwgen {
     for (int i = 0; i < wordCount; i++) {
       password = password + LoWords[i];
     }
-    return "test";
+    return password;
   }
 }
