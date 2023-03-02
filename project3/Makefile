@@ -1,5 +1,5 @@
-all:java
+all: java
 
-java: 
+java:
 
-        javac xkcdpwgen.java
+    javac xkcdpwgen.java
