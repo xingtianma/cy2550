@@ -239,6 +239,6 @@ public class xkcdpwgen {
     for (int i = 0; i < wordCount; i++) {
       password = password + LoWords[i];
     }
-    return password;
+    return "test";
   }
 }
