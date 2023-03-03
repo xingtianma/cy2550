@@ -73,8 +73,8 @@ public class xkcdpwgen {
       int randomWord = new Random().nextInt(wordCount); //picks a random word
 
       //condition to make sure it doesnt make the same word uppercase again
-      if (LoWords[randomWord].substring(0, 1).toUpperCase() != LoWords[randomWord].substring(0,
-          1)) {
+      if (LoWords[randomWord].substring(0, 1).toUpperCase().equals(LoWords[randomWord].substring(0,
+          1))) {
         randomWord++;
       }
       else {
