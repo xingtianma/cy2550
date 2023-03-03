@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
+#!/1darm/bin/env bash
 java xkcdpwgen "$@"
