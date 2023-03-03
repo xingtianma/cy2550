@@ -80,7 +80,7 @@ public class xkcdpwgen {
       else {
         //makes a random word uppercase for the first letter
         LoWords[randomWord] = LoWords[randomWord].substring(0, 1).toUpperCase()
-            .concat(LoWords[randomWord].substring(1));
+            + (LoWords[randomWord].substring(1));
       }
     }
 
