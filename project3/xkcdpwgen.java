@@ -75,7 +75,7 @@ public class xkcdpwgen {
       //condition to make sure it doesnt make the same word uppercase again
       if (LoWords[randomWord].substring(0, 1).toUpperCase().equals(LoWords[randomWord].substring(0,
           1))) {
-        randomWord++;
+        x++;
       }
       else {
         //makes a random word uppercase for the first letter
