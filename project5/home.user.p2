@@ -1,0 +1,19 @@
+abi <abi/3.0> ,
+/home/darm/p2 {
+  #include <abstractions/base>
+  /home/darm/p2 mr,
+  /tmp/project* rw,
+  /var/log/syslog r,
+  /proc/buddyinfo r,
+  /run/systemd/resolve/stub-resolv.conf rw,
+  /home/darm/.project2/config rw,
+  /home/user/template r,
+  /etc/fstab r,
+  /etc/passwd r,
+  /etc/hosts r,
+  /proc/version r,
+  /etc/crontab r,
+  network tcp,
+  deny /proc/cpuinfo r,
+  deny /proc/meminfo r,
+}
